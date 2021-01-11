@@ -28,7 +28,6 @@
 	--weight-regular: 400;
 
 	/* Size */
-	--size-border-radius: 4px;
 }
 
 /* Universal Tags */
@@ -38,7 +37,6 @@
 
 body {
 	margin: 0;
-	cursor: default;
 }
 
 a {
@@ -102,14 +100,4 @@ p {
 .navbar__menu__item {
 	padding: 8px 12px;
 	margin: 0px 4px;
-	cursor: pointer;
-	border-radius: var(--size-border-radius);
-}
-
-.navbar__menu__item.active {
-	border: 1px solid var(--color-white);
-}
-
-.navbar__menu__item:hover {
-	background-color: var(--color-dark-pink);
 }
