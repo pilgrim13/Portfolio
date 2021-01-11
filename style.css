@@ -87,7 +87,7 @@ p {
 	background-color: var(--color-pink);
 	align-items: center;
 	color: var(--color-white);
-	padding: 16px;
+	padding: 15px;
 }
 
 .navbar__logo {
