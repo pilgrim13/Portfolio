@@ -10,7 +10,9 @@
 	--color-dark-grey: #4d4d4d;
 	--color-grey: #616161;
 	--color-light-grey: #7c7979;
+	--color-light-blue: #6cccff;
 	--color-blue: #73aace;
+	--color-dark-blue: #006ecb;
 	--color-yellow: #fff7d1;
 	--color-orange: #feb546;
 	--color-black: #000000;
@@ -50,6 +52,13 @@ ul {
 	list-style: none;
 }
 
+button {
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
 /* Typography */
 
 h1 {
@@ -84,7 +93,9 @@ p {
 #navbar {
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--color-pink);
+	/* background-color: var(--color-pink); */
+	background-color: var(--color-dark-blue);
+
 	align-items: center;
 	color: var(--color-white);
 	padding: 15px;
@@ -112,4 +123,34 @@ p {
 
 .navbar__menu__item:hover {
 	background-color: var(--color-dark-pink);
+}
+
+/* Home */
+#home {
+	background: url('imgs/home-bg.png') center/cover no-repeat;
+	padding: 40px;
+	text-align: center;
+}
+
+.home__avatar {
+	width: 200px;
+	height: 200px;
+	/* padding: 10px;
+	border-radius: 20%;
+	border: 2px solid var(--color-light-white); */
+}
+
+.home__title,
+.home__description {
+	color: var(--color-white);
+}
+
+.home__contact {
+	color: var(--color-white);
+	font: var(--font-regular);
+	font-weight: var(--weight-bold);
+	margin: 24px;
+	padding: 8px 12px;
+	border: 2px solid var(--color-white);
+	border-radius: var(--size-border-radius);
 }
