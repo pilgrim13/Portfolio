@@ -13,16 +13,21 @@ document.addEventListener('scroll', () => {
 
 
 // Handle scrolling when tapping on the navbar menu
-
 const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click', (event) => scrollToTarget(event));
 
-navbarMenu.addEventListener('click', (event) => {
+// Handle scrolling when tapping on the Contact Me Button
+const contactBtn = document.querySelector('.home__contact');
+contactBtn.addEventListener('click', (event) => scrollToTarget(event));
+
+// Scrolling to target function
+function scrollToTarget(event) {
   const target = event.target;
   const link = target.dataset.link;
+  console.log(link);
   if (link==null){
     return;
   }
-  console.log(link);
   const scrollTo = document.querySelector(link);
   scrollTo.scrollIntoView({behavior: "smooth"});
-});
+}
