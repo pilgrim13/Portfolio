@@ -97,14 +97,20 @@ p {
 
 /* Navbar */
 #navbar {
+	position: fixed;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	/* background-color: var(--color-pink); */
-	background-color: var(--color-dark-blue);
-
+	background-color: transparent;
 	align-items: center;
 	color: var(--color-white);
 	padding: 15px;
+}
+
+#navbar.navbar--dark {
+	background-color: var(--color-dark-blue);
+	padding: 8px;
+	transition: all var(--animation-duration) ease-in-out;
 }
 
 .navbar__logo {
@@ -137,12 +143,14 @@ p {
 	right: 32px;
 	font-size: 24px;
 	color: var(--color-white);
+	display: none;
 }
 
 /* Home */
 #home {
 	background: url('imgs/home-bg.png') center/cover no-repeat;
 	padding: 40px;
+	padding-top: 120px;
 	text-align: center;
 }
 
