@@ -20,6 +20,14 @@ navbarMenu.addEventListener('click', (event) => scrollToTarget(event));
 const contactBtn = document.querySelector('.home__contact');
 contactBtn.addEventListener('click', (event) => scrollToTarget(event));
 
+// 화면이 내려가면 홈화면 투명해지기
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+  home.style.opacity = (1 - (window.scrollY / homeHeight));
+});
+
+
 // Scrolling to target function
 function scrollToTarget(event) {
   const target = event.target;
