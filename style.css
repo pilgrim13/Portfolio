@@ -416,3 +416,4 @@ p {
 	transform: scale(1.1);
 	color: var(--color-dark-blue);
 }
+@media screen and (max-width: 768px) {
