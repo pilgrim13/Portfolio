@@ -31,7 +31,7 @@
 			</div>
 			<div class="navbar__menu">
 				<ul class="navbar__menu">
-					<li class="navbar__menu__item" data-link="#home">Home</li>
+					<li class="navbar__menu__item active" data-link="#home">Home</li>
 					<li class="navbar__menu__item" data-link="#about">About</li>
 					<li class="navbar__menu__item" data-link="#skills">Skills</li>
 					<li class="navbar__menu__item" data-link="#work">Work</li>
@@ -220,17 +220,17 @@
 				<h1>My Work</h1>
 			<h3>Projects</h3>
 			<div class="work__categories">
-				<button class="category__btn active">
+				<button class="category__btn active" data-filter="*">
 					ALL<span class="category__count">8</span>
 				</button>
-				<button class="category__btn">
+				<button class="category__btn" data-filter="front-end">
 					Front-end<span class="category__count">3</span>
 				</button>
-				<button class="category__btn">
+				<button class="category__btn" data-filter="back-end">
 					Back-end<span class="category__count">3</span>
 				</button>
-				<button class="category__btn">
-					Mobile<span class="category__count">2</span>
+				<button class="category__btn" data-filter="iot">
+					IoT<span class="category__count">2</span>
 				</button>
 			</div>
 
@@ -239,45 +239,72 @@
 					href="https://github.com/pilgrim13/Portfolio"
 					class="project"
 					target="blank"
+					data-type="front-end"
 				>
-					<!-- <i class="fab fa-git project__img" alt="github"></i> -->
-					<img src="imgs/munji.jpeg" alt="github" class="project__img" />
+					<img src="imgs/mywork/portfolio.png" alt="portfolio" class="project__img" />
 					<div class="project__description">
-						<h3>Github Site</h3>
+						<h3>My Portfolio</h3>
 						<span>Make portfolio with HTML & CSS</span>
 					</div>
 				</a>
 				<a
-					href="https://github.com/pilgrim13/Portfolio"
+					href="https://github.com/pilgrim13"
 					class="project"
 					target="blank"
+					data-type="back-end"
 				>
-					<img src="imgs/munji.jpeg" alt="github" class="project__img" />
+					<img src="imgs/mywork/9ingForSports.png" alt="9ingForSports" class="project__img" />
 					<div class="project__description">
-						<h3>Project</h3>
-						<span>Project Explain</span>
+						<h3>9ingForSports</h3>
+						<span>스포츠 강사를 위한 구인구직 앱 <br> AndroidStudio (JAVA)</span>
 					</div>
 				</a>
 				<a
-					href="https://github.com/pilgrim13/Portfolio"
+					href="https://github.com/pilgrim13"
 					class="project"
 					target="blank"
+					data-type="iot"
 				>
-					<img src="imgs/munji.jpeg" alt="github" class="project__img" />
+					<img src="imgs/mywork/smartLed.png" alt="smartLed" class="project__img" />
 					<div class="project__description">
-						<h3>Project</h3>
-						<span>Project Explain <span>
+						<h3>SmartLED IoT</h3>
+						<span>원하는 색으로 자동 빛을 감지하는 스마트 조명<span>
 					</div>
 				</a>
 				<a
-					href="https://github.com/pilgrim13/Portfolio"
+					href="https://github.com/pilgrim13"
 					class="project"
 					target="blank"
+					data-type="front-end"
 				>
-					<img src="imgs/munji.jpeg" alt="github" class="project__img" />
+					<img src="imgs/mywork/alertToiletApp.png" alt="alertToiletApp" class="project__img" />
 					<div class="project__description">
-						<h3>Project</h3>
-						<span>Project Explain <span>
+						<h3>Smart Toilet App</h3>
+						<span>화장실 사용 통계를 위한 앱<span>
+					</div>
+				</a>
+				<a
+					href="https://github.com/pilgrim13"
+					class="project"
+					target="blank"
+					data-type="iot"
+				>
+					<img src="imgs/mywork/smartParcelBox.png" alt="smartParcelBox" class="project__img" />
+					<div class="project__description">
+						<h3>Smart Parcel IoT</h3>
+						<span>택배가 오면 자동으로 감지해 보관과 알람기능 택배박스<span>
+					</div>
+				</a>
+				<a
+					href="https://github.com/pilgrim13"
+					class="project"
+					target="blank"
+					data-type="iot"
+				>
+					<img src="imgs/mywork/alertToilet.png" alt="github" class="project__img" />
+					<div class="project__description">
+						<h3>Smart Toilet IoT</h3>
+						<span>위험을 알려주는 똑똑한 변기커버<span>
 					</div>
 				</a>
 			</div>
