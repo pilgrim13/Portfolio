@@ -21,7 +21,15 @@ navbarMenu.addEventListener('click', (event) => {
   if (link==null){
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollToTarget(link);
+});
+
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 
@@ -29,12 +37,14 @@ navbarMenu.addEventListener('click', (event) => {
 const contactBtn = document.querySelector('.home__contact');
 contactBtn.addEventListener('click', () => scrollToTarget('#contact'));
 
+
 // 화면이 내려가면 홈화면 투명해지기
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   home.style.opacity = (1 - (window.scrollY / homeHeight));
 });
+
 
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
@@ -45,10 +55,12 @@ document.addEventListener('scroll', () => {
   }
 });
 
+
 // Handle click on the "Arrou-Up" button
 arrowUp.addEventListener('click', () => {
   scrollToTarget('#home');
 });
+
 
 // Mywork Category
 const workBtnContainer = document.querySelector('.work__categories');
@@ -59,6 +71,7 @@ workBtnContainer.addEventListener('click', (e) => {
   if (filter == null){
     return ;
   }
+
 
   // Remove Selection from the  previous item and select the new one
   const active = document.querySelector('.category__btn.selected');
@@ -79,6 +92,7 @@ workBtnContainer.addEventListener('click', (e) => {
     projectContainer.classList.remove('anim-out');
   }, 300);
 });
+
 
 // Scrolling to target function
 function scrollToTarget(link) {
